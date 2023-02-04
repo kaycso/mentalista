@@ -1,0 +1,1 @@
+- criar níveis de dificuldade (fácil - acertar um número de 0 a 10; médio - acertar um número de 0 a 100; difícil - acertar um número de 0 a 1000)

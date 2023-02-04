@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentalista</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>criar um header fixo para os outros projetos</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="title">
+                <h2>O Mentalista</h2>
+                <p>Tente acertar o Número Sorteado!</p>
+                <p class="alert-message-attempts">você só possui 3 tentativas</p>
+            </div>
+            <div class="content-input">
+                <label for="kickNumber">Digite um número de 0 a 10:</label>
+                <input type="text" name="kickNumber" id="kickNumber">
+                <p id="alertUserNumber"></p>
+            </div>
+            <div class="content-button">
+                <button id="userNumber" onclick="didItHit()">Tentar a Sorte!</button>
+            </div>
+            <div id="alert">
+                <h3 id="wrong"></h3>
+                <h3 id="end-attempts"></h3>
+                <h3 id="correct"></h3>
+                <h3 id="tip"></h3>
+            </div>
+            <button id="button-reload" onClick="reloadPage()">Sortear Novo Número</button>
+        </div>
+    </main>
+    
+    <script src="./main.js"></script>
+</body>
+</html>

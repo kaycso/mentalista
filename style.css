@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
+
+:root {
+    --alert-color: #ffff5d;
+    --background-color-elements: #13011a;
+    --button-color: #db71ff;
+    --error-color: #ff0000;
+    --gradient-color: linear-gradient(#1e0328, #13011a);
+    --second-color: #af7bc1;
+    --text-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    background-image: var(--gradient-color);
+    min-height: 100vh;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 1;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+input {
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+button {
+    padding: 12px 24px;
+    border: 1px solid var(--button-color);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+    background-color: transparent;
+    color: var(--button-color);
+    transition: 200ms;
+}
+
+button:hover {
+    background-color: var(--button-color);
+    color: var(--background-color-elements);
+}
+
+/* ==== HEADER ======== */
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-color-elements);
+}
+
+/* ===== MAIN ========== */
+main {
+    margin-block: 48px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid var(--second-color);
+    border-radius: 10px;
+    background-color: var(--background-color-elements);
+    max-width: 350px;
+}
+
+.container .title,
+.container .content-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.container .title .alert-message-attempts {
+    color: var(--alert-color);
+    font-size: 12px;
+}
+
+.container .content-input #alertUserNumber {
+    color: var(--error-color);
+    font-size: 12px;
+    font-weight: 300;
+}
+
+button:disabled {
+    opacity: .5;
+}
+
+#alert {
+    text-align: center;
+}
+
+span {
+    color: var(--alert-color);
+}
+
+#alert #tip {
+    margin-top: 8px;
+    color: var(--alert-color);
+}
+
+#button-reload {
+    display: none;
+    text-transform: uppercase;
+    color: var(--button-color);
+    border-color: var(--button-color);
+}
+
+#button-reload.displayOn {
+    display: block;
+}
+
+#button-reload:hover {
+    color: #fff;
+    background-color: var(--button-color);
+}
