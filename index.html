@@ -20,20 +20,18 @@
                 <p class="alert-message-attempts">você só possui 3 tentativas</p>
             </div>
             <div class="content-input">
-                <label for="kickNumber">Digite um número de 0 a 10:</label>
-                <input type="text" name="kickNumber" id="kickNumber">
-                <p id="alertUserNumber"></p>
+                <label for="number">Digite um número de 0 a 10:</label>
+                <input type="text" name="Number" id="user-number">
+                <p id="alert-user-number"></p>
             </div>
             <div class="content-button">
-                <button id="userNumber" onclick="didItHit()">Tentar a Sorte!</button>
+                <button id="btn-user-number">Tentar a Sorte!</button>
             </div>
             <div id="alert">
-                <h3 id="wrong"></h3>
-                <h3 id="end-attempts"></h3>
-                <h3 id="correct"></h3>
+                <h3 id="game-result"></h3>
                 <h3 id="tip"></h3>
             </div>
-            <button id="button-reload" onClick="reloadPage()">Sortear Novo Número</button>
+            <button id="btn-new-game" onClick="createNewGame()">Sortear Novo Número</button>
         </div>
     </main>
     

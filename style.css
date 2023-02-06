@@ -98,7 +98,7 @@ main {
     font-size: 12px;
 }
 
-.container .content-input #alertUserNumber {
+.container .content-input #alert-user-number {
     color: var(--error-color);
     font-size: 12px;
     font-weight: 300;
@@ -121,18 +121,18 @@ span {
     color: var(--alert-color);
 }
 
-#button-reload {
+#btn-new-game {
     display: none;
     text-transform: uppercase;
     color: var(--button-color);
     border-color: var(--button-color);
 }
 
-#button-reload.displayOn {
+#btn-new-game.displayOn {
     display: block;
 }
 
-#button-reload:hover {
+#btn-new-game:hover {
     color: #fff;
     background-color: var(--button-color);
 }
